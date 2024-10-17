@@ -5,5 +5,7 @@ public class Tax {
 //        5-10 Lac        20
 //        10-15 Lac       30
 //        15+ Lac
+        System.out.println(Math.PI);
+        System.out.println(Math.sin(78));
     }
 }
