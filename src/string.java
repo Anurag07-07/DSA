@@ -17,6 +17,45 @@ public class string {
 
         System.out.println(largestString);
     }
+
+    public static  void  string(){
+        String s = "   artificial intelligence and machine learning    ";
+//        System.out.println(s.toUpperCase());
+        System.out.println(s.length());
+        System.out.println(s.strip());
+        System.out.println(s.strip().length());
+        System.out.println(s.replace("machine learning","Data Science"));
+
+        //String Concatenation
+        String name = "my name is Anurag raj";
+        if (name.contains("Anurag")) {
+            System.out.println("It Contains Anurag");
+        }
+    }
+
+    public  static  void filterFiles(){
+        String[] filenames = {"img1.jpg","img2.png","d1.pdf","d3.pdf"};
+        for (String f:filenames){
+            if (f.endsWith(".pdf")){
+                System.out.println(f);
+            }
+        }
+    }
+
+    public  static  void printoccurance(){
+        String doc = "this is a very large document on java,java can handle large large numbers";
+        String word = "large";
+        int ind = doc.indexOf(word);
+//        System.out.println(ind);
+
+        while(ind !=-1){
+            System.out.println(ind);
+            //find next occ
+            ind = doc.indexOf(word,ind+1);
+
+        }
+
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        String a = "Hello";
@@ -65,6 +104,14 @@ public class string {
 //
 //
 
-        largeststring();
+//        largeststring();
+
+//        string();
+        filterFiles();
+        printoccurance();
+
+        String greet = "Hi Everyone Hi all";
+        System.out.println(greet.indexOf("Hi",2));
+
     }
 }
