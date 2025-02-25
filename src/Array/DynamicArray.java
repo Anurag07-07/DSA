@@ -65,7 +65,7 @@ public class DynamicArray {
         Integer number = sc.nextInt();
 
         System.out.println();
-
+ 
         for (Integer i: arr){
             System.out.print(i+" ");
         }
