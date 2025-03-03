@@ -57,6 +57,7 @@ class Game{
             }else {
 //                Update the Guess
                 expectedGuess = (int)(Math.random()*10);
+                System.out.println("New Guess Number is :"+expectedGuess);
             }
         }
     }
