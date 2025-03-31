@@ -62,7 +62,7 @@ public class RainwaterTrapping {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] arr = {7,0,4,2,5,0,6,4,0,5};
+        int[] arr = {0,1,0,2,1,0,1,3,2,1,2,1};
 //        Brute(arr);
         Better(arr);
     }
